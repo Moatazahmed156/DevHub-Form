@@ -30,10 +30,12 @@ function Form({ Courses }) {
         }
       );
       console.log("Success:", response.data);
-      setMessage("Form Submitted Successfully");
+      setMessage("Form submitted successfully");
     } catch (error) {
       console.log("Error: ", error);
-      setMessage("Failed to submit the form");
+      if (error.response) {
+        setMessage(`${error.response.data.message}`);
+      } else setMessage("Failed to submit the form");
     }
   };
 
