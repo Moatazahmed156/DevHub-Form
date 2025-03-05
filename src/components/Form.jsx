@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-function Form() {
+function Form({ Courses }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -93,7 +93,9 @@ function Form() {
             className="border border-gray-200 h-[40px] w-full p-2"
             required
           >
-            <option value="None">Select an option:</option>
+            <option value="" disabled selected>
+              Select an option:
+            </option>
             <option value="Cairo">Cairo</option>
             <option value="Ain Shams">Ain Shams</option>
             <option value="Helwan">Helwan</option>
@@ -109,7 +111,9 @@ function Form() {
             className="border border-gray-200 h-[40px] w-full p-2"
             required
           >
-            <option value="None">Select an option:</option>
+            <option value="" disabled selected>
+              Select an option:
+            </option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -125,12 +129,14 @@ function Form() {
             className="border border-gray-200 h-[40px] w-full p-2"
             required
           >
-            <option value="None">Select an option:</option>
-            <option value="C++">C++</option>
-            <option value="OOP">OOP</option>
-            <option value="Flutter">Flutter</option>
-            <option value="DS & Algorithm">DS & Algorithm</option>
-            <option value="UI/UX">UI/UX</option>
+            <option value="" disabled selected>
+              Select an option:
+            </option>
+            {Courses.map((e) => (
+              <option value={e} key={e}>
+                {e}
+              </option>
+            ))}
           </select>
         </div>
         {Message && (

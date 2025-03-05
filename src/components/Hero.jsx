@@ -1,6 +1,6 @@
 import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
 
-function Hero({ background, title }) {
+function Hero({ background, title, slogan }) {
   return (
     <div className="relative h-screen 2xl:h-[80vh]">
       <div
@@ -18,9 +18,7 @@ function Hero({ background, title }) {
             <FaCaretLeft />
           </span>
         </h1>
-        <p className="text-lg font-bold mt-8 tracking-widest">
-          THE DEVHUB'25 EVENT IS UNDER THE WAY!
-        </p>
+        <p className="text-lg font-bold mt-8 tracking-widest">{slogan}</p>
       </div>
     </div>
   );

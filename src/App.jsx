@@ -7,6 +7,7 @@ import List from "./components/List";
 import DevHub from "./assets/Dev-Hub.jpg";
 import { useState } from "react";
 function App() {
+  let courses = ["C++", "OOP", "Flutter", "DS & Algorithm", "UI/UX"];
   const [openList, setOpenList] = useState(false);
   function changeList() {
     setOpenList((prev) => !prev);
@@ -19,8 +20,12 @@ function App() {
       ) : (
         <Navbar openList={changeList} />
       )}
-      <Hero background={DevHub} title="DevHub'25" />
-      <Form />
+      <Hero
+        background={DevHub}
+        title="DevHub'25"
+        slogan="THE DEVHUB'25 EVENT IS UNDER THE WAY!"
+      />
+      <Form Courses={courses} />
       <Footer />
     </div>
   );
