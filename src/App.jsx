@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
 import List from "./components/List";
+import DevHub from "./assets/Dev-Hub.jpg";
 import { useState } from "react";
 function App() {
   const [openList, setOpenList] = useState(false);
@@ -18,7 +19,7 @@ function App() {
       ) : (
         <Navbar openList={changeList} />
       )}
-      <Hero />
+      <Hero background={DevHub} title="DevHub'25" />
       <Form />
       <Footer />
     </div>
