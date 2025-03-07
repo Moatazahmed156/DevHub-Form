@@ -3,12 +3,12 @@ import axios from "axios";
 
 function Form({ Courses }) {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    university: "None",
-    university_level: "None",
-    course: "None",
+    name: null,
+    email: null,
+    phone: null,
+    university: null,
+    university_level: null,
+    course: null,
   });
 
   const [Message, setMessage] = useState("");
