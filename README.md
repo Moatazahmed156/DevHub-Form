@@ -26,7 +26,11 @@ A modern and responsive course/event registration form built with **React**, **A
 ```
 src/
 ├── components/
-│   └── RegistrationForm.jsx
+│   └── NavBar.jsx
+│   └── Hero.jsx
+│   └── Form.jsx
+│   └── Fotter.jsx
+│   └── List.jsx
 ├── App.jsx
 ├── main.jsx
 └── index.css
