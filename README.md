@@ -40,5 +40,5 @@ src/
 
 ## 📷 Preview
 
-![DevHub Form Preview](https://keen-khapse-cda7d1.netlify.app/)
+[DevHub Form Preview](https://keen-khapse-cda7d1.netlify.app/)
 
